@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    tools:text="Address"
+    android:id="@+id/tvAddress"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="City"
+              android:id="@+id/tvCity"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="Name"
+              android:id="@+id/tvName"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="Latitude"
+              android:id="@+id/tvLat"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="Zip"
+              android:id="@+id/tvZip"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="Logo"
+              android:id="@+id/tvLogo"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="This is some sample text"
+              android:id="@+id/tvPhone"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="Longitude"
+              android:id="@+id/tvLong"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="ID"
+              android:id="@+id/tvID"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              tools:text="State"
+              android:id="@+id/tvState"/>
+
+</LinearLayout>
