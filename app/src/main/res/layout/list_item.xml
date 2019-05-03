@@ -2,46 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:id="@+id/linearLay"
+>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-    tools:text="Address"
-    android:id="@+id/tvAddress"/>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="City"
-              android:id="@+id/tvCity"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="150dp"
+               tools:text="Name"
+               android:scaleType="fitXY"
+               android:id="@+id/tvName"
+               android:layout_margin="8dp"
+               android:layout_gravity="center_vertical"
+               android:src="@mipmap/ic_launcher"/>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Name"
-              android:id="@+id/tvName"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="8dp">
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Latitude"
-              android:id="@+id/tvLat"/>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Zip"
-              android:id="@+id/tvZip"/>
+        <TextView
+                android:text="City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvMainCity" android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+                android:gravity="center"
+        />
+        <TextView
+                android:text="State"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvMainState" android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+        />
+    </LinearLayout>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Logo"
-              android:id="@+id/tvLogo"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="This is some sample text"
-              android:id="@+id/tvPhone"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Longitude"
-              android:id="@+id/tvLong"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="ID"
-              android:id="@+id/tvID"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="State"
-              android:id="@+id/tvState"/>
 
 </LinearLayout>
