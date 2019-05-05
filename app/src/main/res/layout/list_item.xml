@@ -5,43 +5,20 @@
               android:orientation="vertical">
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-    tools:text="Address"
-    android:id="@+id/tvAddress"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="City"
-              android:id="@+id/tvCity"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
               tools:text="Name"
-              android:id="@+id/tvName"/>
+              android:id="@+id/tvName" android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Latitude"
-              android:id="@+id/tvLat"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Zip"
-              android:id="@+id/tvZip"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Logo"
-              android:id="@+id/tvLogo"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="This is some sample text"
-              android:id="@+id/tvPhone"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="Longitude"
-              android:id="@+id/tvLong"/>
-
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
               tools:text="ID"
-              android:id="@+id/tvID"/>
+              android:id="@+id/tvID" android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-              tools:text="State"
-              android:id="@+id/tvState"/>
+    <View android:layout_width="match_parent" android:layout_height="2dp"
+          android:layout_margin="16dp"
+          android:background="#CDDC39"
+    />
 
 </LinearLayout>

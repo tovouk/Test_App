@@ -1,23 +1,27 @@
 package christopher.bottlerock
 
-import android.arch.persistence.room.Entity
-import android.arch.persistence.room.PrimaryKey
 
-data class Store(
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+
+data class StoreList(
+
+    @SerializedName("stores")
+    @Expose
     val stores: List<StoreX>
 )
 
-@Entity(tableName = "store_table")
+
 data class StoreX(
-    @PrimaryKey(autoGenerate = true)
-    val address: String,
-    val city: String,
-    val latitude: String,
-    val longitude: String,
-    val name: String,
-    val phone: String,
-    val state: String,
-    val storeID: String,
-    val storeLogoURL: String,
-    val zipcode: String
+
+    @SerializedName("address") @Expose val address: String,
+    @SerializedName("city") @Expose val city: String,
+    @SerializedName("latitude") val latitude: String,
+    @SerializedName("longitude") val longitude: String,
+    @SerializedName("name") val name: String,
+    @SerializedName("phone") val phone: String,
+    @SerializedName("state") val  state: String,
+    @SerializedName("storeID") val storeID: String,
+    @SerializedName("storeLogoURL") val storeLogoURL: String,
+    @SerializedName("zipcode") val zipcode: String
 )
